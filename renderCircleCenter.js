@@ -5,13 +5,18 @@
  * 
  * @param {UINT8 0Array} frequencyArray 
  * @param {canvas context} ctx 
- * @param {number} centerX 
- * @param {number} centerY 
+ * @param {object} params
+ * 
  */
 
-function render(frequencyArray, ctx, centerX, centerY) {
-	ctx.fillStyle = 'rgba(255, 255, 255, 0.21)'
-	ctx.fillRect(0, 0, 300, 300)
+function render(frequencyArray, ctx, params) {
+	const { 
+		centerX, centerY, 
+		height=500, 
+		width=500,
+		bgColor= 'rgba(255, 255, 155, 0.21)'} = params
+	ctx.fillStyle = bgColor
+	ctx.fillRect(0, 0, width, height)
 	ctx.fill()
 
 	const bars = frequencyArray.length 

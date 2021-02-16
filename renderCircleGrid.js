@@ -12,7 +12,7 @@
 
 function render(frequencyArray, ctx, width, height) {
 	// Fill the canvas with a color before drawing 
-	ctx.fillStyle = 'rgba(255, 255, 255, 0.2)' 
+	ctx.fillStyle = 'rgba(0, 0, 0, 0.2)'
 	ctx.fillRect(0, 0, width, height)
 	ctx.fill()
 
@@ -28,7 +28,7 @@ function render(frequencyArray, ctx, width, height) {
 		// The diameter of each small circle is 30px the value of each 
 		// frequency data (f) is 0 to 255. 
 		// Normalize f from 0 - 255 to 0 - 30 
-		const radius = f / 255 * 30
+		const radius = f / 255 * 35
 		// Calculate x and y as grid 
 		const x = i % 32 * step             // Get the x position 
 		const y = Math.floor(i / 32) * step // get the y position

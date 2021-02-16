@@ -16,6 +16,7 @@
 
       #canvas {
         border: 1px solid;
+        border-radius: 3em;
       }
 
       button {
@@ -24,11 +25,17 @@
         border-radius: 0.25em;
         border: 1px solid;
       }
+      #button-play {
+        background-color: rgb(60, 165, 60);
+      }
+      #button-pause {
+        background-color: red;
+      }
     </style>
   </head>
   <body>
 
-    <canvas id="canvas" width="300" height="300"></canvas>
+    <canvas id="canvas" width="500" height="500"></canvas>
     
     <button id="button-play">Play</button>
     <button id="button-pause">Stop</button>
